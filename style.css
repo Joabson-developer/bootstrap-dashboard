@@ -16,6 +16,13 @@ aside {
 .nav-link {
   transition: background-color 300ms ease-in-out;
 }
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus-visible {
   background-color: var(--bs-nav-pills-link-active-bg);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 1px auto -webkit-focus-ring-color !important;
+  box-shadow: none !important;
 }
